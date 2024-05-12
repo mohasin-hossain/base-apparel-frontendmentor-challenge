@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  display: flex;
+}
+.header__left {
+  width: 60%;
+  padding: 6rem 15rem 10rem 15rem;
+}
+.header__left__details {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  max-width: 50rem;
+}
+.header__left__details h3 {
+  font-size: clamp(3rem, 4.5vw, 7rem);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 1rem;
+  color: hsl(0, 6%, 24%);
+}
+.header__left__details h3 span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+.header__left__details p {
+  font-size: clamp(0.8rem, 3.4vw, 1.8rem);
+  color: hsl(0, 36%, 70%);
+  line-height: 1.7;
+  font-weight: 400;
+  padding: 3rem 0;
+}
+.header__left__details form {
+  display: flex;
+  position: relative;
+}
+.header__left__details form input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 100vh;
+  border: 1px solid hsl(0, 36%, 70%);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.header__left__details form input:focus {
+  outline: none;
+}
+.header__left__details form input::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.header__left__details form input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.header__left__details form button {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  right: -2rem;
+  border-radius: 100vh;
+  border: none;
+  padding: 2rem 4rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  transition: all 0.3s linear;
+}
+.header__left__details form button:hover {
+  box-shadow: hsla(0, 74%, 74%, 0.507) 0px 10px 38px;
+  background-image: linear-gradient(135deg, hsla(0, 80%, 86%, 0.844), hsla(0, 74%, 74%, 0.849));
+}
+.header__left__details form .error-icon {
+  position: absolute;
+  right: 8rem;
+  top: 1.8rem;
+  display: none;
+}
+.header__left__details .error-message {
+  display: none;
+  font-size: 1.5rem;
+  color: hsl(0, 93%, 68%);
+  padding-top: 1.4rem;
+  padding-left: 2.5rem;
+}
+.header__right {
+  width: 40%;
+}
+.header__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */
