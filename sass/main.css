@@ -23,15 +23,41 @@ body {
 .header {
   display: flex;
 }
+@media only screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+}
 .header__left {
   width: 60%;
   padding: 6rem 15rem 10rem 15rem;
+}
+@media only screen and (max-width: 1200px) {
+  .header__left {
+    padding: 6rem 8rem 10rem 5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header__left {
+    width: 100%;
+    padding: 0;
+  }
+  .header__left__logo {
+    padding: 4rem;
+  }
 }
 .header__left__details {
   display: grid;
   align-content: center;
   height: 100%;
   max-width: 50rem;
+}
+@media only screen and (max-width: 1000px) {
+  .header__left__details {
+    max-width: 100%;
+    text-align: center;
+    padding: 6rem 8rem 6rem 7rem;
+  }
 }
 .header__left__details h3 {
   font-size: clamp(3rem, 4.5vw, 7rem);
@@ -105,6 +131,15 @@ body {
   padding-top: 1.4rem;
   padding-left: 2.5rem;
 }
+.header__mobile__image {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .header__mobile__image {
+    display: block;
+    width: 100%;
+  }
+}
 .header__right {
   width: 40%;
 }
@@ -113,4 +148,9 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 1000px) {
+  .header__right {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
